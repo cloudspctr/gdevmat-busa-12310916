@@ -17,7 +17,7 @@ void draw()
   drawLinearFunction();
   drawQuadraticFunction();
   drawCircle();
-  formWave();
+  drawWave();
 }
 
 void drawCartesianPlane()
@@ -73,14 +73,14 @@ void drawCircle()
   }
 }
 
-void formWave()
+void drawWave()
 {
   color green = color(0,255,0);
   fill(green);
   noStroke();
   
-  for(float i=0; i<= 200; i+=0.1f)
+  for(float i=-200; i<= 200; i+=0.1f)
   {
-    circle(i, (float)Math.sin(i*0.5f) * 2, 5);
+    circle(i, (float)Math.sin(i*0.22f) * 16, 5);
   }
 }
